@@ -8,7 +8,7 @@ import pandas as pd
 import streamlit as st
 
 # Load and clean data
-nyc_data = pd.read_csv('/Users/anaisegaillard/Documents/coding-projects/nyc-ideas.csv')
+nyc_data = pd.read_csv('nyc-ideas.csv')
 nyc_data['Type'] = nyc_data['Type'].astype(str).str.strip().str.lower()
 nyc_data['Genre'] = nyc_data['Genre'].astype(str).str.strip().str.lower()
 
